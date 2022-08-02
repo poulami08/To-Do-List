@@ -43,7 +43,7 @@ All of these are symptoms of not keeping a proper "To-Do List."*
 
 <p>&nbsp;</p>
 <p align="center">
-  <img width="550" height="300" src="readme images\view.png">
+  <img width="550" height="300" src="readme images\view.PNG">
 </p>
 <p>&nbsp;</p>
 
