@@ -17,7 +17,7 @@ addtaskbtn.addEventListener("click", function(){
     }
     taskobj.push(addtaskinputval);
     localStorage.setItem("localtask", JSON.stringify(taskobj));
-    addtaskinput.value ='';
+     addtaskinput.value ='';
 }
     showtask();
 
