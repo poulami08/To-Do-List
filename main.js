@@ -5,7 +5,7 @@ let addtaksbtn = document.getElementById("addtaksbtn");
 
 addtaskbtn.addEventListener("click", function(){
     addtaskinputval = addtaskinput.value;
-    if(addtaskinputval.trim()!=0){
+    if(addtaskinputval.trim()!=0){ // to remove blank task
     let webtask = localStorage.getItem("localtask");
     if(webtask == null)
     {
@@ -13,15 +13,16 @@ addtaskbtn.addEventListener("click", function(){
     }
     else
     {
-        taskobj=JSON.parse(webtask);
+        taskobj=JSON.parse(webtask); //to make it object
     }
-    taskobj.push(addtaskinputval);
-    localStorage.setItem("localtask", JSON.stringify(taskobj));
+    taskobj.push(addtaskinputval); //to add values 
+    localStorage.setItem("localtask", JSON.stringify(taskobj)); //to save it in local storage 
      addtaskinput.value ='';
 }
     showtask();
 
 })
+//show task
 function showtask()
 {
     let webtask = localStorage.getItem("localtask");
